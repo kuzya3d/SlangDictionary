@@ -1,0 +1,57 @@
+﻿<Window x:Class="SlangDictionaryApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Словарь молодежного сленга" Height="450" Width="800">
+    <Grid Margin="10">
+        <TextBlock Text="Словарь молодежного сленга" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,10,0,20" />
+
+        <!-- поле поиска -->
+        <TextBox x:Name="SearchBox" 
+                 Width="400" 
+                 Height="30" 
+                 Margin="0,50,0,0" 
+                 VerticalAlignment="Top" 
+                 HorizontalAlignment="Center" 
+                 />
+
+        <!-- поиск кноппка -->
+        <Button Content="Поиск" 
+                Width="100" 
+                Height="30" 
+                Margin="0,90,0,0" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Center" 
+                Click="SearchButton_Click"/>
+
+        <!-- опр слова -->
+        <TextBlock x:Name="DefinitionText" 
+                   Text="Введите слово, чтобы увидеть определение." 
+                   TextWrapping="Wrap" 
+                   FontSize="16" 
+                   Margin="20,150,20,10" 
+                   VerticalAlignment="Top" 
+                   HorizontalAlignment="Center" 
+                   TextAlignment="Center" />
+
+        <!-- Кнопка переход на редакт часть -->
+        <Button Content="Редактирование слов" 
+                Width="200" 
+                Height="40" 
+                VerticalAlignment="Bottom" 
+                HorizontalAlignment="Right" 
+                Margin="0,0,10,10" 
+                Click="AddWordButton_Click"/>
+        <Button Content="Посмотреть все слова"
+        Width="200"
+        Height="40"
+        VerticalAlignment="Bottom"
+        HorizontalAlignment="Left"
+        Margin="0,0,10,10"
+        Click="ViewWordListButton_Click" />
+
+    </Grid>
+</Window>

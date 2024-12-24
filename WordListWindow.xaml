@@ -1,0 +1,29 @@
+﻿<Window x:Class="SlangDictionaryApp.WordListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Список слов" Height="628" Width="600">
+    <Grid Margin="10">
+        <TextBlock Text="Полный список слов в словаре"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,20" />
+
+        <!-- список  -->
+        <ListBox x:Name="WordListBox" 
+                 Width="560"
+                 Margin="0,213,0,0"
+                 HorizontalAlignment="Center"
+                 SelectionChanged="WordListBox_SelectionChanged" />
+
+        <!-- определение -->
+        <TextBlock x:Name="DefinitionText"
+                   Width="504"
+                   Height="116"
+                   Margin="0,38,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   Foreground="Gray" />
+    </Grid>
+</Window>
